@@ -1,0 +1,309 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GuideBridge - Login</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Internal CSS just in case external fails */
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-color: #f0f2f5;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-container {
+      background: white;
+      padding: 40px 50px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 320px;
+    }
+
+    .title {
+      font-size: 28px;
+      color: #2c3e50;
+      margin-bottom: 5px;
+    }
+
+    .tagline {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #2e86de;
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background-color: #1b4f72;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h1 class="title">GuideBridge</h1>
+    <p class="tagline">Bridge your doubts. Ask your seniors.</p>
+
+    <form onsubmit="event.preventDefault(); window.location.href='home.html';">
+      <input type="text" placeholder="Enter your name" required>
+      <input type="text" placeholder="Your Department" required>
+      <select required>
+        <option value="">Select Year</option>
+        <option>1st Year</option>
+        <option>2nd Year</option>
+        <option>3rd Year</option>
+        <option>4th Year</option>
+      </select>
+      <button type="submit">🚀 Login to GuideBridge</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GuideBridge - Login</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Dark gradient */
+    }
+
+    .login-container {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      border-radius: 16px;
+      padding: 40px 50px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      width: 320px;
+      color: #ffffff;
+    }
+
+    .title {
+      font-size: 30px;
+      margin-bottom: 5px;
+      color: #00d2ff;
+    }
+
+    .tagline {
+      font-size: 14px;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      font-size: 14px;
+      border: 1px solid #666;
+      border-radius: 6px;
+      background-color: #222;
+      color: #eee;
+    }
+
+    input::placeholder {
+      color: #888;
+    }
+
+    select {
+      background-color: #222;
+      color: #eee;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: linear-gradient(90deg, #0072ff, #00c6ff);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h1 class="title">GuideBridge</h1>
+    <p class="tagline">Bridge your doubts. Ask your seniors.</p>
+
+    <form onsubmit="event.preventDefault(); window.location.href='home.html';">
+      <input type="text" placeholder="Enter your name" required>
+      <input type="text" placeholder="Your Department" required>
+      <select required>
+        <option value="">Select Year</option>
+        <option>1st Year</option>
+        <option>2nd Year</option>
+        <option>3rd Year</option>
+        <option>4th Year</option>
+      </select>
+      <button type="submit">🚀 Login to GuideBridge</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GuideBridge - Login</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .login-container {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px 50px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      text-align: center;
+      width: 320px;
+      backdrop-filter: blur(8px);
+    }
+
+    .title {
+      font-size: 28px;
+      color: #00d2ff;
+      margin-bottom: 5px;
+    }
+
+    .tagline {
+      font-size: 14px;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: #222;
+      color: #fff;
+    }
+
+    input::placeholder {
+      color: #999;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #00c3ff;
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background-color: #0077b6;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1 class="title">GuideBridge</h1>
+    <p class="tagline">Bridge your doubts. Ask your seniors.</p>
+
+    <form onsubmit="handleLogin(event)">
+      <input type="text" id="username" placeholder="Enter your name" required>
+      <input type="text" id="department" placeholder="Your Department" required>
+      <select id="year" required>
+        <option value="">Select Year</option>
+        <option>1st Year</option>
+        <option>2nd Year</option>
+        <option>3rd Year</option>
+        <option>4th Year</option>
+      </select>
+      <button type="submit">🚀 Login to GuideBridge</button>
+    </form>
+  </div>
+
+  <script>
+    // Redirect to home if already logged in
+    window.onload = function () {
+      if (localStorage.getItem("username")) {
+        window.location.href = "home.html";
+      }
+    };
+
+    function handleLogin(event) {
+      event.preventDefault();
+      const name = document.getElementById("username").value;
+      const dept = document.getElementById("department").value;
+      const year = document.getElementById("year").value;
+
+      localStorage.setItem("username", name);
+      localStorage.setItem("department", dept);
+      localStorage.setItem("year", year);
+
+      window.location.href = "home.html";
+    }
+  </script>
+</body>
+</html> -->

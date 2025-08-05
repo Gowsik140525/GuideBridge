@@ -1,0 +1,271 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GuideBridge - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Dark background */
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      color: #ffffff;
+    }
+
+    .home-container {
+      margin-top: 40px;
+      text-align: center;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .title {
+      font-size: 30px;
+      color: #00d2ff;
+      margin-bottom: 20px;
+    }
+
+    #searchBox {
+      padding: 10px;
+      width: 80%;
+      max-width: 400px;
+      font-size: 14px;
+      border: 1px solid #444;
+      border-radius: 6px;
+      background-color: #222;
+      color: #eee;
+      margin-bottom: 30px;
+    }
+
+    #searchBox::placeholder {
+      color: #888;
+    }
+
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(6px);
+      padding: 20px;
+      width: 90%;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      text-align: left;
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      color: #66ccff;
+    }
+
+    .card p {
+      margin: 4px 0;
+      color: #ddd;
+    }
+
+    .card a {
+      color: #00c3ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="home-container">
+    <h1 class="title">👩‍🎓 Seniors at GuideBridge</h1>
+
+    <input type="text" id="searchBox" placeholder="Search by name or department" onkeyup="filterCards()">
+
+    <div class="card-container">
+      <div class="card">
+        <h2>Swetha K</h2>
+        <p>Dept: CSE - 2024</p>
+        <p>Project: Mental Health Chatbot</p>
+        <a href="profile.html">View Profile</a> |
+        <a href="https://linkedin.com" target="_blank">Message</a>
+      </div>
+      <div class="card">
+        <h2>Gowsik</h2>
+        <p>Dept: ECE - 2025</p>
+        <p>Project: Smart Helmet AI</p>
+        <a href="profile.html">View Profile</a> |
+        <a href="https://linkedin.com" target="_blank">Message</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function filterCards() {
+      let input = document.getElementById('searchBox').value.toLowerCase();
+      let cards = document.getElementsByClassName('card');
+      for (let card of cards) {
+        card.style.display = card.innerText.toLowerCase().includes(input) ? 'block' : 'none';
+      }
+    }
+  </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GuideBridge - Home</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      color: white;
+    }
+
+    .logout-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #00c3ff;
+      color: white;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .logout-btn:hover {
+      background: #0077b6;
+    }
+
+    .home-container {
+      margin-top: 60px;
+      text-align: center;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .title {
+      font-size: 30px;
+      color: #00d2ff;
+      margin-bottom: 20px;
+    }
+
+    #searchBox {
+      padding: 10px;
+      width: 80%;
+      max-width: 400px;
+      font-size: 14px;
+      border: 1px solid #444;
+      border-radius: 6px;
+      background-color: #222;
+      color: #eee;
+      margin-bottom: 30px;
+    }
+
+    #searchBox::placeholder {
+      color: #888;
+    }
+
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(6px);
+      padding: 20px;
+      width: 90%;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      text-align: left;
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      color: #66ccff;
+    }
+
+    .card p {
+      margin: 4px 0;
+      color: #ccc;
+    }
+
+    .card a {
+      color: #00c3ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <button class="logout-btn" onclick="logout()">Logout</button>
+
+  <div class="home-container">
+    <h1 class="title">👩‍🎓 Seniors at GuideBridge</h1>
+
+    <input type="text" id="searchBox" placeholder="Search by name or department" onkeyup="filterCards()">
+
+    <div class="card-container">
+      <div class="card">
+        <h2>Swetha K</h2>
+        <p>Dept: CSE - 2024</p>
+        <p>Project: Mental Health Chatbot</p>
+        <a href="profile.html">View Profile</a> |
+        <a href="https://linkedin.com" target="_blank">Message</a>
+      </div>
+      <div class="card">
+        <h2>Pranav Raj</h2>
+        <p>Dept: ECE - 2025</p>
+        <p>Project: Smart Helmet AI</p>
+        <a href="profile.html">View Profile</a> |
+        <a href="https://linkedin.com" target="_blank">Message</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Logout and clear saved login info
+    function logout() {
+      localStorage.clear();
+      window.location.href = "login.html";
+    }
+
+    // Search filter function
+    function filterCards() {
+      let input = document.getElementById('searchBox').value.toLowerCase();
+      let cards = document.getElementsByClassName('card');
+      for (let card of cards) {
+        card.style.display = card.innerText.toLowerCase().includes(input) ? 'block' : 'none';
+      }
+    }
+  </script>
+</body>
+</html>
